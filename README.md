@@ -93,10 +93,10 @@ Each run writes to `--out-dir`:
 With `--passes > 1`, each pass is written to `pass<N>/` and a summary to `passes.json`.
 
 ## Limitations
-- **Small models, greedy decoding.** Results don't predict how production browsing agents behave.
+- **Small models, greedy decoding.** Results don't predict how SOTA agents behave.
 - **One run per configuration.** Differences between conditions rest on single traces.
-- **Grounding checks words, not claims.** An answer can recombine words from the evidence into a false statement and still score as grounded.
-- **Stated reasons are generated text.** The `REASON` given for each link choice is not evidence of what caused the choice.
+- **Grounding checks words only.** An answer can recombine words from the evidence into a false statement and still score as grounded.
+- **Stated reasons are ultimately generated text.** The `REASON` given for each link choice is not actual evidence of what caused the choice.
 - **Script-rendered pages may come back empty.** The fetcher waits for the page to load, but pages that load their content later with JavaScript can still return no text.
 - **Hard-coded seeds.** Seed URLs and keyword lists are specific to liverpool.ac.uk.
 
