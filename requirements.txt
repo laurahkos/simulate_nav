@@ -1,0 +1,7 @@
+transformers>=4.56,<6
+accelerate>=0.34
+huggingface_hub>=0.34
+html2text>=2020.1.16
+playwright>=1.44
+sentencepiece>=0.2
+protobuf>=4.25
